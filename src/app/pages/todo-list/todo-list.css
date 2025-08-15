@@ -1,0 +1,76 @@
+.todo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.todo-card-container {
+    width: 50%;
+    padding: 20px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.due-date {
+    margin-left: auto;
+    font-size: 0.9em;
+    color: gray;
+}
+
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo-item mat-card {
+    padding: 10px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.todo-item:hover mat-card {
+    transform: translateY(-2px);
+    background-color: #f9f9f9;
+}
+
+.todo-content {
+    display: flex;
+    align-items: center;
+}
+
+.todo-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.todo-description {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.todo-date {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.due-soon {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.completed-date {
+    color: green;
+}
+
+.completed .todo-description {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.divider {
+    border: 1px solid #e0e0e0;
+}

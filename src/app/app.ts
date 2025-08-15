@@ -1,0 +1,17 @@
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+@Component({
+  selector: 'app-root',
+  styleUrls: ['./app.css'],
+  standalone: true,
+  imports: [RouterOutlet, MatToolbarModule],
+  template: `
+    <mat-toolbar color="primary">
+      <div class="toolbar-title">To-Do Application</div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  `
+})
+export class App {}
